@@ -1,0 +1,19 @@
+*   b35764c Merge pull request #12 from hristijaniliev/4-sort-tasks-by-priority
+|\  
+| *   007f911 Merge branch 'master' into 4-sort-tasks-by-priority
+| |\  
+| |/  
+|/|   
+* |   4f5b6b8 Merge pull request #11 from hristijaniliev/2-find-all-completed-tasks
+|\ \  
+| * | 889f452 k
+* | |   bab34e1 Merge pull request #10 from hristijaniliev/6-find-the-highest-priority-unfinished-task
+|\ \ \  
+| |/ /  
+|/| |   
+| * | 73e3105 Implement getCompletedTasks
+|/ /  
+| * cf8ea44 t
+|/  
+* aeed201 Add starter code
+* 968fb89 Initial commit
