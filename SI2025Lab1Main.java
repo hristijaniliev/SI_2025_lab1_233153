@@ -70,7 +70,7 @@ class TaskManager {
     // 2. Find all completed tasks
     public List<Task> getCompletedTasks() {
         // TODO: Implement logic to return completed tasks
-        return new ArrayList<>();
+        return tasks.stream().filter(Task::isCompleted).collect(Collectors.toList());
     }
 
     // 3. List tasks sorted by name
@@ -80,7 +80,7 @@ class TaskManager {
 
     // 4. Sort tasks by priority
     public void sortTasksByPriority() {
-        // TODO: Implement sorting by priority logic
+          tasks.stream().sorted(Comparator.comparing(Task::getPriority).reversed()).forEach(System.out::println);
     }
 
     // 5. Filter tasks by category
@@ -92,7 +92,7 @@ class TaskManager {
     // 6. Find the highest-priority unfinished task
     public List<Task> getMostUrgentTasks() {
         // TODO: Implement logic to find most urgent tasks
-        return new ArrayList<>();
+        return tasks.stream().filter(t -> t.getPriority()==Priority.HIGH).collect(Collectors.toList());
     }
 
     // 7. Count tasks per category
@@ -120,6 +120,7 @@ public class SI2025Lab1Main {
         manager.addTask("Buy groceries", Priority.LOW, "Personal");
 
         // MISSING: Calls to the new methods that will be implemented
+		
 
         manager.printTasks();
     }
